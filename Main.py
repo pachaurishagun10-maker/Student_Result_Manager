@@ -6,4 +6,13 @@ while True:
     print("2. View Student")
     print("3. Check Result")
     print("4. Exit")
+
+    choice=input("Enter your choice:")
+
+    if choice=="1":
+        name=input("Enter student name:")
+        marks=marks(input("Enter marks:"))
+        student[name]=marks
+        print(f"{name} Successfully added!")
+        
     

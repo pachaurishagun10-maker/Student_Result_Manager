@@ -21,4 +21,20 @@ while True:
         else:
             for name, marks in student.items():
                 print(f"Name: {name}, Marks: {marks}")
-                
+        
+    elif choice == "3":
+        name=input("Enter student name:")
+        if name in student:
+            marks=student[name]
+            if marks>=90:
+                print(f"{name} has scored A grade with marks {marks}")
+            elif marks>=80:
+                print(f"{name} has scored B grade with marks {marks}")
+            elif marks>=70:
+                print(f"{name} has scored C grade with marks {marks}")
+            elif marks>=60:
+                print(f"{name} has scored D grade with marks {marks}")
+            else:
+                print(f"{name} has failed with marks {marks}")
+        else:
+            print("Student not found!")

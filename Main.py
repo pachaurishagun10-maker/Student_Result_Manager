@@ -11,7 +11,7 @@ while True:
 
     if choice=="1":
         name=input("Enter student name:")
-        marks=marks(input("Enter marks:"))
+        marks=int(input("Enter marks:"))
         student[name]=marks
         print(f"{name} Successfully added!")
         
@@ -38,3 +38,9 @@ while True:
                 print(f"{name} has failed with marks {marks}")
         else:
             print("Student not found!")
+
+    elif choice == "4":
+        print("Exiting the application...")
+        break
+    else:
+        print("Invalid choice! Please try again.")
